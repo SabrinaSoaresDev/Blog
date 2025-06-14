@@ -1,5 +1,6 @@
 // src/Components/PostLayout.jsx
 import React from "react";
+import { Link } from "react-router-dom";
 
 const PostLayout = ({ title, children }) => {
   return (
@@ -8,6 +9,9 @@ const PostLayout = ({ title, children }) => {
       <article className="prose prose-lg dark:prose-invert max-w-none">
         {children}
       </article>
+      <Link to="/" className="text-blue-600 hover:underline block mb-6">
+        ← Voltar para início
+      </Link>
     </main>
   );
 };
