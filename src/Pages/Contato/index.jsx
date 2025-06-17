@@ -32,7 +32,7 @@ function Contato() {
   return (
     <>
       <Header />
-      <div className="min-h-screen px-6 py-16 bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-white">
+      <div className="min-h-screen px-6 py-16 bg-gray-100 dark:bg-gray-500 text-gray-800 dark:text-white">
         <div className="max-w-3xl mx-auto">
           <h1 className="text-4xl font-bold mb-6 text-center">Entre em Contato</h1>
 
@@ -48,7 +48,7 @@ function Contato() {
               <input
                 type="text"
                 name="user_name"
-                className="w-full px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-700 bg-gray-50 dark:bg-gray-800"
+                className="w-full px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-200 bg-gray-50 dark:bg-gray-200"
                 required
               />
             </div>
@@ -57,7 +57,7 @@ function Contato() {
               <input
                 type="email"
                 name="user_email"
-                className="w-full px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-700 bg-gray-50 dark:bg-gray-800"
+                className="w-full px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-200 bg-gray-50 dark:bg-gray-200"
                 required
               />
             </div>
@@ -66,13 +66,13 @@ function Contato() {
               <textarea
                 name="message"
                 rows="5"
-                className="w-full px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-700 bg-gray-50 dark:bg-gray-800"
+                className="w-full px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-200 bg-gray-50 dark:bg-gray-200"
                 required
               ></textarea>
             </div>
             <button
               type="submit"
-              className="bg-slate-900 text-white px-6 py-3 rounded-lg hover:bg-accent/90 transition"
+              className="bg-slate-900 dark:bg-white text-white dark:text-black px-6 py-3 rounded-lg hover:bg-accent/90 transition"
             >
               Enviar Mensagem
             </button>

@@ -23,7 +23,8 @@ function Header() {
 
           {/* Menu Desktop */}
           <nav className="hidden md:flex items-center space-x-8">
-            <Link to="/" className={`hover:text-accent transition ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>Início</Link>
+            <Link to="/"                     
+            className={`hover:text-accent transition ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>Início</Link>
             <Link to="/artigos" className={`hover:text-accent transition ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>Artigos</Link>
             <Link to="/sobre" className={`hover:text-accent transition ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>Sobre</Link>
             <Link to="/contato" className={`hover:text-accent transition ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>Contato</Link>

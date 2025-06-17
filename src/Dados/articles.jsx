@@ -17,7 +17,7 @@ export const artigosDestaque = [
   },
   {
     id: 'rotas-react',
-    title: "Deploy com Vercel",
+    title: "Configurando Rotas no React",
     excerpt: "Coloque seu projeto no ar em minutos.",
     image: deploy,
   }
