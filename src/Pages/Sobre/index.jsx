@@ -6,7 +6,7 @@ function Sobre() {
   return (
     <>
     <Header/>
-    <div className="min-h-screen px-6 py-16 bg-gray-100 dark:bg-gray-500 text-gray-800 dark:text-white">
+    <div className="min-h-screen px-6 py-16 bg-gray-100 dark:bg-white text-gray-800 dark:text-black">
       <div className="max-w-4xl mx-auto text-center">
         <h1 className="text-4xl font-bold mb-6">Sobre o DevBlog</h1>
         <p className="text-lg mb-4">

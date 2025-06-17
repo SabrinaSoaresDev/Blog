@@ -32,7 +32,7 @@ function Contato() {
   return (
     <>
       <Header />
-      <div className="min-h-screen px-6 py-16 bg-gray-100 dark:bg-gray-500 text-gray-800 dark:text-white">
+      <div className="min-h-screen px-6 py-16 bg-gray-100 dark:bg-gray-300 text-gray-800 dark:text-black">
         <div className="max-w-3xl mx-auto">
           <h1 className="text-4xl font-bold mb-6 text-center">Entre em Contato</h1>
 

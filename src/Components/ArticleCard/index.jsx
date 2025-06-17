@@ -7,7 +7,7 @@ function ArticleCard({ article }) {
   return (
     <motion.div 
       whileHover={{ y: -5 }}
-      className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow"
+      className="bg-gray-200 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow"
     >
       <img 
         src={article.image} 

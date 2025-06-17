@@ -40,9 +40,9 @@ function Home() {
 </AnimatedSection>
 
         {/* Artigos em Destaque */}
-       <AnimatedSection className="py-20 px-4 bg-gray-300 dark:bg-gray-900">
+       <AnimatedSection className="py-20 px-4 bg-gray-100 dark:bg-gray-200">
   <div className="max-w-7xl mx-auto">
-    <h2 className="text-4xl font-extrabold text-center text-gray-800 dark:text-white mb-12">
+    <h2 className="text-4xl font-extrabold text-center text-gray-800 dark:text-black mb-12">
       Artigos em Destaque
     </h2>
     
