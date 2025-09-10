@@ -2,6 +2,7 @@ import reactIniciante from '../assets/reactIniciante.png';
 import hooks from '../assets/hooks.png';
 import deploy from '../assets/deploy.png';
 import rotas from '../assets/rotas.jpg';
+import api from '../assets/react.svg';
 export const artigosDestaque = [
   {
     id: 'iniciando-react',
