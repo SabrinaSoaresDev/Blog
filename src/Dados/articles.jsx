@@ -71,4 +71,11 @@ export const artigos = [
     image: rotas,
     link: '/posts/rotas-react',
   },
+   {
+    id: 'api-react',
+    title: 'Consumindo APIs no React',
+    excerpt: 'Aprenda a buscar e enviar dados usando Fetch e Axios no React.',
+    image: api,
+    link: '/posts/api-react',
+  },
 ];
