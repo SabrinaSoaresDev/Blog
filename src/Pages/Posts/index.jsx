@@ -420,6 +420,95 @@ export default App;`}
     </div>
   </>
 )}
+          {id === "api-react" && (
+  <>
+    <h2 className="text-2xl font-semibold mt-6 mb-2">
+      Consumindo APIs no React com Fetch e Axios
+    </h2>
+
+    <p className="mb-4 text-lg">
+      A maioria dos aplicativos modernos precisa buscar ou enviar dados para um servidor. 
+      No React, podemos fazer isso de forma simples com <code>fetch</code> ou bibliotecas como <code>axios</code>. 
+      Veja alguns exemplos práticos:
+    </p>
+
+    {/* Exemplo com Fetch */}
+    <div className="mt-6">
+      <h3 className="text-xl font-medium mb-2">Usando Fetch</h3>
+      <p className="mb-2">
+        O <code>fetch</code> é nativo do JavaScript e permite realizar requisições HTTP.
+      </p>
+      <pre className="bg-gray-400 p-3 rounded-md overflow-x-auto text-black">
+{`import { useEffect, useState } from 'react';
+
+function ListaUsuarios() {
+  const [usuarios, setUsuarios] = useState([]);
+
+  useEffect(() => {
+    fetch("https://jsonplaceholder.typicode.com/users")
+      .then(res => res.json())
+      .then(data => setUsuarios(data));
+  }, []);
+
+  return (
+    <ul>
+      {usuarios.map(u => <li key={u.id}>{u.name}</li>)}
+    </ul>
+  );
+}
+
+export default ListaUsuarios;`}
+      </pre>
+    </div>
+
+    {/* Exemplo com Axios */}
+    <div className="mt-6">
+      <h3 className="text-xl font-medium mb-2">Usando Axios</h3>
+      <p className="mb-2">
+        O <code>axios</code> facilita o tratamento de respostas e erros. Primeiro instale com:
+      </p>
+      <pre className="bg-gray-800 text-white p-3 rounded-md mb-3 overflow-x-auto">
+        npm install axios
+      </pre>
+      <pre className="bg-gray-400 p-3 rounded-md overflow-x-auto text-black">
+{`import { useEffect, useState } from 'react';
+import axios from 'axios';
+
+function ListaPosts() {
+  const [posts, setPosts] = useState([]);
+
+  useEffect(() => {
+    axios.get("https://jsonplaceholder.typicode.com/posts?_limit=5")
+      .then(res => setPosts(res.data))
+      .catch(err => console.error(err));
+  }, []);
+
+  return (
+    <div>
+      {posts.map(p => (
+        <div key={p.id} className="border p-2 rounded mb-2">
+          <h4 className="font-semibold">{p.title}</h4>
+          <p>{p.body}</p>
+        </div>
+      ))}
+    </div>
+  );
+}
+
+export default ListaPosts;`}
+      </pre>
+    </div>
+
+    <div className="mt-6 bg-green-50 border-l-4 border-green-500 text-green-700 p-4 rounded-md">
+      <p className="font-semibold">⚡ Dica:</p>
+      <p>
+        Sempre trate erros com <code>catch</code> e use um estado de carregamento para melhorar a experiência do usuário. 
+        Para projetos grandes, considere usar ferramentas como <strong>React Query</strong> ou <strong>SWR</strong>.
+      </p>
+    </div>
+  </>
+)}
+
     </PostLayout>
     <Footer/>
     </>
