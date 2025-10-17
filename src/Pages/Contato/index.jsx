@@ -32,7 +32,11 @@ function Contato() {
   return (
     <>
       <Header />
+<<<<<<< HEAD
       <div className="min-h-screen px-6 py-16 bg-gray-100 dark:bg-white text-gray-800 dark:text-black">
+=======
+      <div className="min-h-screen px-6 py-16 bg-gray-100 dark:bg-gray-300 text-gray-800 dark:text-black">
+>>>>>>> 5d32bc1e76cee27699901aef832400fa43b35e62
         <div className="max-w-3xl mx-auto">
           <h1 className="text-4xl font-bold mb-6 text-center">Entre em Contato</h1>
 
@@ -72,7 +76,11 @@ function Contato() {
             </div>
             <button
               type="submit"
+<<<<<<< HEAD
               className="bg-slate-900 text-white  px-6 py-3 rounded-lg hover:bg-gray-400 hover:text-black transition"
+=======
+              className="bg-slate-900 dark:bg-white text-white dark:text-black px-6 py-3 rounded-lg hover:bg-accent/90 transition"
+>>>>>>> 5d32bc1e76cee27699901aef832400fa43b35e62
             >
               Enviar Mensagem
             </button>

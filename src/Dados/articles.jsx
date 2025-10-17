@@ -3,7 +3,10 @@ import hooks from '../assets/hooks.png';
 import deploy from '../assets/deploy.png';
 import rotas from '../assets/rotas.jpg';
 import api from '../assets/react.svg';
+<<<<<<< HEAD
 import { link } from 'framer-motion/client';
+=======
+>>>>>>> 5d32bc1e76cee27699901aef832400fa43b35e62
 export const artigosDestaque = [
   {
     id: 'iniciando-react',
@@ -80,6 +83,7 @@ export const artigos = [
     image: api,
     link: '/posts/api-react',
   },
+<<<<<<< HEAD
   {
   id: "estilizacao-react",
   title: "Estilizando Componentes no React: Guia Prático",
@@ -94,4 +98,6 @@ export const artigos = [
   image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800",
   link:'/posts/context-api-react',
 }
+=======
+>>>>>>> 5d32bc1e76cee27699901aef832400fa43b35e62
 ];

@@ -28,7 +28,10 @@ function Header() {
             <Link to="/artigos" className={`hover:text-accent transition ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>Artigos</Link>
             <Link to="/sobre" className={`hover:text-accent transition ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>Sobre</Link>
             <Link to="/contato" className={`hover:text-accent transition ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>Contato</Link>
+<<<<<<< HEAD
             <Link to="/forum" className={`hover:text-accent transition ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>Forum</Link>
+=======
+>>>>>>> 5d32bc1e76cee27699901aef832400fa43b35e62
             <motion.button
               onClick={toggleDarkMode}
               whileHover={{ scale: 1.1 }}
@@ -59,7 +62,10 @@ function Header() {
             <Link to="/artigos" onClick={() => setMenuAberto(false)} className="hover:text-accent">Artigos</Link>
             <Link to="/sobre" onClick={() => setMenuAberto(false)} className="hover:text-accent">Sobre</Link>
             <Link to="/contato" onClick={() => setMenuAberto(false)} className="hover:text-accent">Contato</Link>
+<<<<<<< HEAD
             <Link to="/forum" onClick={() => setMenuAberto(false)} className="hover:text-accent">Forum</Link>
+=======
+>>>>>>> 5d32bc1e76cee27699901aef832400fa43b35e62
             <button
               onClick={() => {
                 toggleDarkMode();

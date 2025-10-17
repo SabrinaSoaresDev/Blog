@@ -509,6 +509,7 @@ export default ListaPosts;`}
   </>
 )}
 
+<<<<<<< HEAD
       {id === "estilizacao-react" && (
         <>
           <h2 className="text-2xl font-semibold mt-6 mb-2">
@@ -747,6 +748,8 @@ function App() {
   </>
 )}
 
+=======
+>>>>>>> 5d32bc1e76cee27699901aef832400fa43b35e62
     </PostLayout>
     <Footer/>
     </>
